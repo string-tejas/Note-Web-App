@@ -33,7 +33,7 @@ const SearchBar = ({
     }
 
     const searchClick = () => {
-        search(input.current.value)
+        search(input.current.value.toLowerCase())
     }
 
     return (
@@ -42,7 +42,10 @@ const SearchBar = ({
                 <div
                     className='search-icon'
                     style={{ color: 'blue' }}
-                    onClick={searchClick}
+                    onClick={() => {
+                        if (query === '') showAll()
+                        else searchClick()
+                    }}
                 >
                     <FiSearch />
                 </div>

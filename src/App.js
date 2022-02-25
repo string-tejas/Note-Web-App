@@ -7,7 +7,7 @@ import convertDate from './components/misc/toIndianDateString'
 function App() {
     const [loading, setLoading] = useState(true)
     const [notes, setNotes] = useState([])
-
+    document.title = 'Note App'
     useEffect(() => {
         let storedNotes = localStorage.getItem('tj-note')
         if (storedNotes) {

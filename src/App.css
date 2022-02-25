@@ -161,20 +161,23 @@
     border-bottom: 2px solid rgb(82, 82, 82);
 }
 .input-text {
+    padding: 0px;
     border-style: none;
     outline: none;
     background-color: transparent;
-}
-.input-text.input-area {
-    border: none;
-    font-size: 1rem;
-    resize: none;
-    color: black;
 }
 .note-body {
     color: gray;
     padding: 0 0.3rem;
     overflow: auto;
+}
+.input-text.input-area {
+    border: none;
+    padding: none;
+    margin: none;
+    font-size: 1rem;
+    resize: none;
+    color: black;
 }
 .note-footer {
     margin-top: auto;

@@ -44,13 +44,15 @@ const AddForm = ({ createNote, closeForm }) => {
                         borderRadius: '0',
                     }}
                 >
-                    <input
-                        type='text'
-                        className='note-title input-text'
-                        required
-                        placeholder='Title'
-                        ref={titleRef}
-                    />
+                    <div className='note-title'>
+                        <input
+                            type='text'
+                            className='note-title input-text'
+                            required
+                            placeholder='Title'
+                            ref={titleRef}
+                        />
+                    </div>
                     <textarea
                         cols='50'
                         rows='10'

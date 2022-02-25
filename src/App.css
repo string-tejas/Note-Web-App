@@ -164,7 +164,6 @@
     border-style: none;
     outline: none;
     background-color: transparent;
-    border-bottom: 2px solid rgb(82, 82, 82);
 }
 .input-text.input-area {
     border: none;

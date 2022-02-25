@@ -120,12 +120,14 @@ const EditNote = ({ id, title, note, date, update, cancel }) => {
     }
     return (
         <>
-            <input
-                type='text'
-                className='note-title input-text'
-                defaultValue={title}
-                ref={titleRef}
-            />
+            <div className='note-title'>
+                <input
+                    type='text'
+                    className='note-title input-text'
+                    defaultValue={title}
+                    ref={titleRef}
+                />
+            </div>
             <textarea
                 cols='50'
                 rows='10'

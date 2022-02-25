@@ -44,7 +44,7 @@ const AddForm = ({ createNote, closeForm }) => {
                         borderRadius: '0',
                     }}
                 >
-                    <div className='note-title'>
+                    <div className='note-title' style={{ padding: '0' }}>
                         <input
                             type='text'
                             className='note-title input-text'

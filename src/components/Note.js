@@ -120,7 +120,7 @@ const EditNote = ({ id, title, note, date, update, cancel }) => {
     }
     return (
         <>
-            <div className='note-title'>
+            <div className='note-title' style={{ padding: '0' }}>
                 <input
                     type='text'
                     className='note-title input-text'

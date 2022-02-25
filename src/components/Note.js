@@ -113,7 +113,9 @@ const EditNote = ({ id, title, note, date, update, cancel }) => {
             id: id,
             title: titleRef.current.value,
             note: noteRef.current.value,
-            date: toIndian(dateRef.current.value),
+            date: dateRef.current.value
+                ? toIndian(dateRef.current.value)
+                : date,
         }
         update(id, newNote)
         cancel()
